@@ -22,13 +22,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-md-12 col-lg-3 pull-lg-9 pr-0 text-left">
+			<div class="col-md-12 col-lg-7 pull-lg-9 pr-0 text-left">
 
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
 
-					<p>© 2019 <b>AYLM</b> All rights reserved.</p>
+					<p>© 2019 <b>ABBATE Y LA MANTIA S.r.l.</b> All rights reserved.  Grosseto, Via Fanti n. 18. Tuscany - Italy </p>
 
 					</div><!-- .site-info -->
 
@@ -36,13 +36,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			</div><!--col end -->
 
-			<div class="col-md-12 text-sm-left col-lg-9 push-lg-3 text-lg-right">
+			<div class="col-md-12 text-sm-left col-lg-5 push-lg-3 text-lg-right">
 
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
 
-					<p>P.IVA: IT00000000000 | <a href="#">Privacy</a> | <a href="#">Cookie Policy</a> | <a href="#">Company Info</a></p>
+					<p>P.IVA: IT01638000537 | <a href="#">Privacy</a> | <a href="#">Cookie Policy</a></p>
 
 					</div><!-- .site-info -->
 
@@ -63,4 +63,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 </body>
 
 </html>
-
