@@ -67,19 +67,22 @@ h2 {
     background-color: #f1f1f1;
     padding: 80px 50px 30px 50px;
 }
-#wrapper-footer{
+
+#wrapper-footer {
     padding: 30px 50px 30px 50px;
 }
+
 #wrapper-hero {
     background-color: transparent;
     min-height: 500px;
     max-height: 500px;
 }
-.home-slider{
+
+.home-slider {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100% ;
+    min-height: 100%;
 }
 
 .jumbotron {
@@ -217,7 +220,7 @@ ul.social-network li {
 }
 
 .home-box1 {
-    background-image: url("/wp-content/themes/understrap/img/AYLM-testimg.jpg");
+    background-image: url("/wp-content/uploads/2019/05/AYLM-testimg.jpg");
     /* The image used */
     background-color: yellow;
     /* Used if the image is unavailable */
