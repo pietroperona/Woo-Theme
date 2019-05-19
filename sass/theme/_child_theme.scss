@@ -1,0 +1,237 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1500px;
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.navbar-nav a {
+    font-weight: 400;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
+
+.navbar-dark .navbar-brand {
+    color: #000;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #000;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+    font-weight: 500;
+}
+
+p {
+    color: #555555;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h4 {
+    color: #555555;
+    font-family: "Raleway";
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "Raleway";
+    font-weight: 600;
+    size: 50px !important;
+}
+
+.bg-primary {
+    background-color: #fff !important;
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: 150px;
+    height: auto;
+}
+
+#wrapper-footer-full {
+    background-color: #f1f1f1;
+    padding: 80px 50px 30px 50px;
+}
+#wrapper-footer{
+    padding: 30px 50px 30px 50px;
+}
+#wrapper-hero {
+    background-color: transparent;
+    min-height: 500px;
+    max-height: 500px;
+}
+.home-slider{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100% ;
+}
+
+.jumbotron {
+    background-color: #f1f1f1;
+}
+
+#wrapper-footer-full ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: none;
+    margin-block-end: none;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+// .site-info p{
+//     font-size: 13px !important;
+// }
+#wrapper-footer {
+    background-color: #f1f1f1 !important;
+}
+
+#wrapper-footer a:hover {
+    color: #ed704f !important;
+}
+
+#wrapper-footer-full a:hover {
+    color: #ed704f !important;
+}
+
+#wrapper-footer-full a {
+    font-weight: 300 !important;
+    color: #555555;
+}
+
+.site-info a {
+    font-weight: 400 !important;
+    color: #555555;
+}
+
+// .site-footer {
+//     margin-bottom: 80px;
+// }
+
+//social footer icons style
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #555555;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+//end social footer icons
+
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    border-radius: 4px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #ed704f;
+    border: none;
+}
+
+
+.btn-navbartop {
+    border: 1px solid rgba(0, 0, 0, .08) !important;
+    border-bottom-color: rgba(0, 0, 0, .1) !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 1, .1) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15) !important;
+}
+
+.slick-box-p {
+    font-size: 15px;
+    color: #000;
+}
+
+.fa-search {
+    color: #000;
+}
+
+.masonry-column {
+    padding: 0 1px;
+}
+
+.masonry-grid>div .thumbnail {
+    margin: 5px 1px;
+}
+
+.home-box1 {
+    background-image: url("/wp-content/themes/understrap/img/AYLM-testimg.jpg");
+    /* The image used */
+    background-color: yellow;
+    /* Used if the image is unavailable */
+    background-position: top;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    min-height: 600px;
+    padding-top: 5%;
+    padding-left: 25px;
+}
+
+.row .part {
+    min-height: 50%;
+}
