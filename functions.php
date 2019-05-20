@@ -31,3 +31,50 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+//custom footer menu 4col
+function wpb_widgets_init() {
+ 
+    register_sidebar( array(
+        'name' => __( 'Footer col1', 'wpb' ),
+        'id' => 'sidebar-10',
+        'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ) );
+ 
+    register_sidebar( array(
+        'name' =>__( 'Footer col2', 'wpb'),
+        'id' => 'sidebar-11',
+        'description' => __( 'Appears on the static front page template', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ) );
+	
+	
+	register_sidebar( array(
+        'name' =>__( 'Footer col3', 'wpb'),
+        'id' => 'sidebar-12',
+        'description' => __( 'Appears on the static front page template', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ) );
+	
+	register_sidebar( array(
+        'name' =>__( 'Footer col4', 'wpb'),
+        'id' => 'sidebar-13',
+        'description' => __( 'Appears on the static front page template', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
+    ) );
+    }
+ 
+add_action( 'widgets_init', 'wpb_widgets_init' );
