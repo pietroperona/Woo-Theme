@@ -11617,9 +11617,19 @@ figure.woocommerce-product-gallery__wrapper {
     max-width: 1500px; } }
 
 body {
-  font-family: 'Raleway', sans-serif;
   font-size: 17px;
   line-height: 1.75; }
+
+p {
+  font-family: 'Lato', sans-serif; }
+
+h2,
+h3 {
+  font-family: 'EB Garamond', serif; }
+
+.home-product-slider-title {
+  text-align: center;
+  padding: 35px 0; }
 
 .bg-aylm {
   color: #fff; }
@@ -11650,13 +11660,10 @@ a {
 
 h4 {
   color: #555555;
-  font-family: "Raleway";
   font-weight: 400; }
 
 h2 {
-  font-family: "Raleway";
-  font-weight: 600;
-  size: 50px !important; }
+  size: 60px; }
 
 .bg-primary {
   background-color: #fff; }
@@ -11818,11 +11825,18 @@ ul.social-network li {
 
 #wrapper-footer-full h3 {
   color: #fff;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Lato', sans-serif; }
 
 #ywcps_layout1 .ywcps-wrapper .ywcps-nav-prev #prev_tmp1, #ywcps_layout1 .ywcps-wrapper .ywcps-nav-next #next_tmp1 {
   background: none !important;
   font-size: 20px !important; }
+
+#ywcps_layout1 .woocommerce-Price-amount .amount {
+  font-weight: 600 !important; }
+
+#ywcps_layout1 .single_product_container .product_other_info .product_name span {
+  font-weight: 600 !important; }
 
 /*
 * Use existing Bootstrap 4 classes and
