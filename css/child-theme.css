@@ -11820,6 +11820,10 @@ ul.social-network li {
   color: #fff;
   font-size: 16px; }
 
+#ywcps_layout1 .ywcps-wrapper .ywcps-nav-prev #prev_tmp1, #ywcps_layout1 .ywcps-wrapper .ywcps-nav-next #next_tmp1 {
+  background: none !important;
+  font-size: 20px !important; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
