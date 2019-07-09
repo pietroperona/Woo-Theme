@@ -31,3 +31,29 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+// Get Uomo hompage sidebar
+function wpb_widgets_init() {
+ 
+    register_sidebar( array(
+        'name' => __( 'Hompage Uomo', 'wpb' ),
+        'id' => 'home-uomo',
+        'description' => __( 'Qui inserisci lo slider per la collezione uomo da visualizzare in homepage', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title uomo-home-slider">',
+        'after_title' => '</h3>',
+    ) );
+ 
+    register_sidebar( array(
+        'name' =>__( 'Homepage Donna', 'wpb'),
+        'id' => 'home-donna',
+        'description' => __( 'Qui inserisci lo slider per la collezione donna da visualizzare in homepage', 'wpb' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title donna-home-slider">',
+        'after_title' => '</h3>',
+    ) );
+    }
+ 
+add_action( 'widgets_init', 'wpb_widgets_init' );

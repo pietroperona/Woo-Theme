@@ -56,7 +56,7 @@ the_custom_logo();
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-aylm">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">

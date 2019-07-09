@@ -11621,6 +11621,9 @@ body {
   font-size: 17px;
   line-height: 1.75; }
 
+.bg-aylm {
+  color: #fff; }
+
 .navbar-nav a {
   font-weight: 400; }
 
@@ -11665,7 +11668,7 @@ h2 {
 
 #wrapper-footer-full {
   background-color: #574676;
-  padding: 80px 50px 30px 50px; }
+  padding: 90px 50px 40px 50px; }
 
 #wrapper-footer {
   padding: 30px 50px 30px 50px; }
@@ -11740,9 +11743,24 @@ ul.social-network li {
   transition: all 0.2s; }
 
 .social-circle i {
-  color: #555555;
+  color: #fff;
   -webkit-transition: all 0.8s;
   transition: all 0.8s; }
+
+.payments-ico i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s; }
+
+.payments-ico li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  font-size: 30px; }
 
 .btn-primary {
   color: #fff;

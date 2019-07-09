@@ -10,6 +10,10 @@ body {
     line-height: 1.75;
 }
 
+.bg-aylm{
+    color: $white;
+}
+
 .navbar-nav a {
     font-weight: 400;
 }
@@ -65,7 +69,7 @@ h2 {
 
 #wrapper-footer-full {
     background-color: $secondary;
-    padding: 80px 50px 30px 50px;
+    padding: 90px 50px 40px 50px;
 }
 
 #wrapper-footer {
@@ -155,7 +159,7 @@ ul.social-network li {
 }
 
 .social-circle i {
-    color: #555555;
+    color: $white;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -163,6 +167,25 @@ ul.social-network li {
     transition: all 0.8s;
 }
 
+.payments-ico i {
+    color: $white;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.payments-ico li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
 //end social footer icons
 
 .btn-primary {
@@ -224,7 +247,6 @@ ul.social-network li {
 .row .part {
     min-height: 50%;
 }
-
 
 #wrapper-footer-full a{
     color: $white;
