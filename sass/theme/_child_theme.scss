@@ -15,20 +15,20 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #000;
+    color: $primary;
 }
 
 .navbar-dark .navbar-brand {
-    color: #000;
+    color: $primary;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link {
-    color: #000;
+    color: $primary;
     font-weight: 500;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: black;
+    color: $primary;
     font-weight: 500;
 }
 
@@ -181,8 +181,8 @@ ul.social-network li {
 
 .btn-primary {
     color: #fff;
-    background-color: #000;
-    border-color: #000;
+    background-color: $primary;
+    border-color: $primary;
     border-radius: 4px;
     font-weight: 400;
     margin-top: 20px;
@@ -204,11 +204,11 @@ ul.social-network li {
 
 .slick-box-p {
     font-size: 15px;
-    color: #000;
+    color: $primary;
 }
 
 .fa-search {
-    color: #000;
+    color: $primary;
 }
 
 .masonry-column {
