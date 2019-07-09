@@ -5,9 +5,8 @@
  * @package understrap
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
@@ -21,52 +20,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="<?php echo esc_attr( $container ); ?>" id="footer-full-content" tabindex="-1">
 
-			<!-- Grid row -->
 			<div class="row">
 
-				<!-- Grid column -->
-				<div class="col-md-3 mx-auto">
+				<?php dynamic_sidebar( 'footerfull' ); ?>
 
-				<!-- Links -->
-				<?php dynamic_sidebar( 'sidebar-10' ); ?>
-
-
-				</div>
-				<!-- Grid column -->
-
-				<hr class="clearfix w-100 d-md-none">
-
-				<!-- Grid column -->
-				<div class="col-md-3 mx-auto">
-				<?php dynamic_sidebar( 'sidebar-11' ); ?>
-
-				</div>
-				<!-- Grid column -->
-
-				<hr class="clearfix w-100 d-md-none">
-
-				<!-- Grid column -->
-				<div class="col-md-3 mx-auto">
-
-				<?php dynamic_sidebar( 'sidebar-12' ); ?>
-
-
-				</div>
-				<!-- Grid column -->
-
-				<hr class="clearfix w-100 d-md-none">
-
-				<!-- Grid column -->
-				<div class="col-md-3 mx-auto">
-
-				<?php dynamic_sidebar( 'sidebar-13' ); ?>
-
-				</div>
-				<!-- Grid column -->
-
-</div>
-<!-- Grid row -->
-
+			</div>
 
 		</div>
 

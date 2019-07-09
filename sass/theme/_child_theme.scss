@@ -54,7 +54,7 @@ h2 {
 }
 
 .bg-primary {
-    background-color: #fff !important;
+    background-color: #fff;
 }
 
 .img-fluid {
@@ -64,7 +64,7 @@ h2 {
 }
 
 #wrapper-footer-full {
-    background-color: #f1f1f1;
+    background-color: $secondary;
     padding: 80px 50px 30px 50px;
 }
 
@@ -103,31 +103,17 @@ h2 {
 //     font-size: 13px !important;
 // }
 #wrapper-footer {
-    background-color: #f1f1f1 !important;
+    background-color: $secondary;
+    color: $white;
 }
 
-#wrapper-footer a:hover {
-    color: #555555 !important;
+#wrapper-footer p {
+    color: $white;
 }
 
-#wrapper-footer-full a:hover {
-    color: #ed704f !important;
+#wrapper-footer a {
+    color: $white;
 }
-
-#wrapper-footer-full a {
-    font-weight: 300 !important;
-    color: #555555;
-}
-
-.site-info a {
-    font-weight: 400 !important;
-    color: #555555;
-}
-
-// .site-footer {
-//     margin-bottom: 80px;
-// }
-
 //social footer icons style
 ul.social-network {
     list-style: none;
@@ -239,17 +225,11 @@ ul.social-network li {
     min-height: 50%;
 }
 
-//Mailchimp Home Forms Style
-#mc_embed_signup {
-    background: #e07289 !important;
-    color: #fff;
+
+#wrapper-footer-full a{
+    color: $white;
 }
-#mc_embed_signup p{
-    color: #fff;
-}
-#mc_embed_signup h2{
-    font-size: 32px !important;
-}
-#mergeRow-gdpr {
-    margin-top: 0px !important;
+#wrapper-footer-full h3{
+    color: $white;
+    font-size: 16px;
 }
