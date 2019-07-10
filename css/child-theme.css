@@ -11623,8 +11623,7 @@ body {
 p {
   font-family: 'Lato', sans-serif; }
 
-h2,
-h3 {
+h2, h3, h4 {
   font-family: 'EB Garamond', serif; }
 
 .home-product-slider-title {
@@ -11657,10 +11656,6 @@ p {
 
 a {
   text-decoration: none !important; }
-
-h4 {
-  color: #555555;
-  font-weight: 400; }
 
 h2 {
   size: 60px; }
@@ -11825,7 +11820,7 @@ ul.social-network li {
 
 #wrapper-footer-full h3 {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Lato', sans-serif; }
 
 #ywcps_layout1 .ywcps-wrapper .ywcps-nav-prev #prev_tmp1, #ywcps_layout1 .ywcps-wrapper .ywcps-nav-next #next_tmp1 {
@@ -11837,6 +11832,30 @@ ul.social-network li {
 
 #ywcps_layout1 .single_product_container .product_other_info .product_name span {
   font-weight: 600 !important; }
+
+.home-product-category h4 {
+  text-align: center;
+  padding: 25px 0; }
+
+.svg-product-cosmetica img {
+  max-width: 100px; }
+
+.svg-product-giftbox img {
+  max-width: 100px; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%; }
+
+.home-product-category svg {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 25px; }
 
 /*
 * Use existing Bootstrap 4 classes and
