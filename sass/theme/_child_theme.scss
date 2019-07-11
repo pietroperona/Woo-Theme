@@ -16,9 +16,14 @@ h2,h3,h4{
     font-family: 'EB Garamond', serif;
 }
 
-.home-product-slider-title{
+.home-product-slider-title {
     text-align: center;
     padding: 35px 0 ;
+
+}
+
+.home-product-slider-title h2{
+    font-size: 70px;
 }
 
 .bg-aylm{
@@ -81,8 +86,8 @@ h2 {
 
 #wrapper-hero {
     background-color: transparent;
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 600px;
+    max-height: 600px;
 }
 
 .home-slider {
@@ -202,7 +207,7 @@ ul.social-network li {
 
 .btn-secondary {
     color: #fff;
-    background-color: #ed704f;
+    background-color: $secondary;
     border: none;
 }
 
@@ -253,11 +258,14 @@ ul.social-network li {
 
 #wrapper-footer-full a{
     color: $white;
+    line-height: 2.2;
+    font-weight: 300;
 }
 #wrapper-footer-full h3{
     color: $white;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
+    padding: 0 0 20px 0;
 }
 
 // Slider product style
@@ -300,3 +308,34 @@ ul.social-network li {
       width: 50%;
       padding-bottom: 25px;
   }
+// Carousel Control Setup
+
+  #wrapper-hero{
+      background-image: url("/wp-content/uploads/2019/07/slider_home.png");
+  }
+  .carousel-caption {
+    color: black;
+    right: 58%;
+    text-align: left;
+    max-width: 500px;
+    left: auto;
+    /*top: auto;*/
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+.item {
+    -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    padding: 25px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23574676' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23574676' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
