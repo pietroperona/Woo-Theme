@@ -414,3 +414,15 @@ ul.social-network li {
     font-size: 14px;
     font-weight: 500;
 }
+.woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: $secondary;
+    border: solid 1px $secondary;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+.woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    background-color: #fff ;
+    color: $secondary;
+    border: solid 1px $secondary;
+    -webkit-font-smoothing: antialiased;
+}

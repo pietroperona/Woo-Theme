@@ -58,3 +58,33 @@ add_action( 'widgets_init', 'wpb_widgets_init' );
 
 // block gutemberg editor
 add_filter('use_block_editor_for_post', '__return_false', 10);
+
+/**
+ * Function to remove sidebar on woocommerce single product
+ * Author: Khokan Sardar https://stackoverflow.com/a/57654626/10259012
+ */
+function remove_sidebar_single_product_page() {
+    if ( is_product() ) {
+        // for understrap theme
+        remove_action( 'woocommerce_after_main_content', 'understrap_woocommerce_wrapper_end', 10 );
+        // for default woocommerce structure
+        remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+        // add wrapper end for single product
+        add_action( 'woocommerce_after_main_content', 'understrap_woocommerce_wrapper_end_for_single_product', 11 );
+    }
+}
+add_action( 'wp', 'remove_sidebar_single_product_page' );
+
+function understrap_woocommerce_wrapper_end_for_single_product(){
+    echo '</main><!-- #main -->';
+    echo '</div><!-- .row -->';
+    echo '</div><!-- Container end -->';
+    echo '</div><!-- Wrapper end -->';
+}
+/**
+ * Function to move buy button on woocommerce single product
+ */
+remove_action( 'woocommerce_single_product_summary', 
+'woocommerce_template_single_add_to_cart', 30 );
+add_action( 'woocommerce_single_product_summary', 
+'woocommerce_template_single_add_to_cart', 15 );

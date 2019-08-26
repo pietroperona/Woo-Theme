@@ -11952,6 +11952,18 @@ ul.social-network li {
   font-size: 14px;
   font-weight: 500; }
 
+.woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: #574676;
+  border: solid 1px #574676;
+  color: #fff;
+  -webkit-font-smoothing: antialiased; }
+
+.woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: #fff;
+  color: #574676;
+  border: solid 1px #574676;
+  -webkit-font-smoothing: antialiased; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
