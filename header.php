@@ -20,9 +20,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<!--  Add the new slick-theme.css if you want the default styling -->
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body <?php body_class(); ?>>

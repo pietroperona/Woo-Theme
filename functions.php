@@ -51,9 +51,10 @@ function wpb_widgets_init() {
         'description' => __( 'Qui inserisci lo slider per la collezione donna da visualizzare in homepage', 'wpb' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title donna-home-slider">',
-        'after_title' => '</h3>',
     ) );
     }
  
 add_action( 'widgets_init', 'wpb_widgets_init' );
+
+// block gutemberg editor
+add_filter('use_block_editor_for_post', '__return_false', 10);

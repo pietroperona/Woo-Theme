@@ -20,7 +20,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
-		<div class="row">
+		<div class="row bottom-footer">
 
 			<div class="col-md-12 col-lg-7 pull-lg-9 pr-0 text-left">
 
@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-					<p>© 2019 <b>ABBATE Y LA MANTIA S.r.l.</b> All rights reserved.  Grosseto, Via Fanti n. 18. Tuscany - Italy </p>
+					<p>© <?php echo date("Y"); ?> <b>ABBATE Y LA MANTIA S.r.l.</b> All rights reserved.  Grosseto, Via Fanti n. 18. Tuscany - Italy </p>
 
 					</div><!-- .site-info -->
 
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-					<p>P.IVA: IT01638000537 | <a href="#">Privacy</a> | <a href="#">Cookie Policy</a></p>
+					<p>P.IVA: IT01638000537 | <a href="#">Privacy</a> | <a href="#">Cookie Policy</a> | <a href="https://www.koodit.it">Credits</a></p>
 
 					</div><!-- .site-info -->
 
