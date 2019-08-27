@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-					<p>P.IVA: IT01638000537 | <a href="#">Privacy</a> | <a href="#">Cookie Policy</a> | <a href="https://www.koodit.it">Credits</a> | <a href="#">Company Info</a></p>
+					<p>P.IVA: IT01638000537 • <a href="#">Privacy</a> • <a href="#">Cookie Policy</a> • <a href="https://www.koodit.it">Credits</a> • <a href="#">Company Info</a></p>
 
 					</div><!-- .site-info -->
 

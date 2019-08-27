@@ -50,6 +50,7 @@ h4 {
 
 .navbar-dark .navbar-nav .nav-link {
     color: $primary;
+    text-transform: uppercase;
 }
 
 .navbar-dark .navbar-brand {
@@ -415,12 +416,82 @@ ul.social-network li {
 .woocommerce button.button.alt, .woocommerce input.button.alt {
     background-color: $secondary;
     border: solid 1px $secondary;
+    word-spacing: 1px;
+    letter-spacing: 1px;
     color: #fff;
     -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
 }
 .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
-    background-color: #fff ;
-    color: $secondary;
+    background-color: $primary ;
+    color: #fff;
     border: solid 1px $secondary;
     -webkit-font-smoothing: antialiased;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: $primary;
+    font-size: 1.45em;
+    font-weight: 500;
+}
+.woocommerce .woocommerce-breadcrumb {
+    font-size: .92em;
+    color: $primary;
+    font-weight: 500;
+}
+.woocommerce .woocommerce-breadcrumb a {
+    color: $primary;
+    font-weight: 300;
+}
+.woocommerce_breadcrumb_div{
+    color: $primary;
+    font-weight: 300;
+}
+// FAQ 
+.faq-card{
+    border-bottom: $secondary 1px solid;
+}
+.btn-faq{
+    font-size: 22px;
+}
+.container-faq{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.btn-link:hover {
+    text-decoration: none;
+    font-weight: 500;
+    color: $secondary;
+}
+.add_to_wishlist .single_add_to_wishlist .button .alt{
+background-color: #000;
+}
+.yith-wcwl-add-to-wishlist {
+    margin-top: 0px;
+}
+a.add_to_wishlist.button.alt{
+    background-color: transparent;
+    color: $primary;
+    font-weight: 600;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+a.add_to_wishlist.button.alt:hover{
+    background-color: transparent;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: #000;
+}
+.woocommerce h2{
+    font-family: 'Lato', sans-serif;
+}
+.woocommerce .btn-outline-primary{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#woocommerce-wrapper{
+    padding: 30px 0 00;
 }

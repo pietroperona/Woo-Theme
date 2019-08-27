@@ -88,3 +88,48 @@ remove_action( 'woocommerce_single_product_summary',
 'woocommerce_template_single_add_to_cart', 30 );
 add_action( 'woocommerce_single_product_summary', 
 'woocommerce_template_single_add_to_cart', 15 );
+/**
+ * Change the breadcrumb separator
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_delimiter' );
+function wcc_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimeter from '/' to '>'
+	$defaults['delimiter'] = ' <span class=woocommerce_breadcrumb_div>&gt;</span> ';
+	return $defaults;
+}
+
+// Define woocommerce gallery thumbnail size (aspect ratio remain 1:1)
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
+    return array(
+    'width' => 350,
+    'height' => 350,
+    'crop' => 100,
+    );
+    } );
+
+    // Hide woocommerce quantity_fields in product
+    function woo_remove_all_quantity_fields( $return, $product ) {
+        return true;
+      }
+      add_filter( 'woocommerce_is_sold_individually', 'woo_remove_all_quantity_fields', 10, 2 );
+
+      //align wishlist button to add to cart
+if( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_move_wishlist_button' ) ){
+	function yith_wcwl_move_wishlist_button(  ){
+		echo do_shortcode( '[yith_wcwl_add_to_wishlist]' );
+	}
+	add_action( 'woocommerce_after_add_to_cart_button', 'yith_wcwl_move_wishlist_button' );
+}
+
+// Change WooCommerce "Related products" text
+
+add_filter('gettext', 'change_rp_text', 10, 3);
+add_filter('ngettext', 'change_rp_text', 10, 3);
+
+function change_rp_text($translated, $text, $domain)
+{
+     if ($text === 'Related products' && $domain === 'woocommerce') {
+         $translated = esc_html__('Selezionati per te', $domain);
+     }
+     return $translated;
+}
