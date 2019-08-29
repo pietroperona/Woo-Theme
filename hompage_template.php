@@ -18,7 +18,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>	
 
-
 <div class="container home-product-slider">
 <h2 class="home-product-slider-title">UOMO</h2>
 	<?php if ( is_active_sidebar( 'home-uomo' ) ) : ?>

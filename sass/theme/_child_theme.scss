@@ -428,9 +428,15 @@ ul.social-network li {
     border: solid 1px $secondary;
     -webkit-font-smoothing: antialiased;
 }
+.woocommerce button.button.alt.disabled{
+    background-color: $secondary;
+}
+.woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover{
+    background-color: $secondary;
+}
 .woocommerce div.product p.price, .woocommerce div.product span.price {
     color: $primary;
-    font-size: 1.45em;
+    font-size: 1.8em;
     font-weight: 500;
 }
 .woocommerce .woocommerce-breadcrumb {
@@ -494,4 +500,61 @@ a.add_to_wishlist.button.alt:hover{
 
 #woocommerce-wrapper{
     padding: 30px 0 00;
+}
+
+.container-inci{
+    background-color: $secondary;
+    color: #fff;
+    margin: 40px 0;
+    padding: 25px;
+}
+.container-inci p{
+    color: #fff;
+}
+.inci-title{
+    text-align: center;
+    padding: 25px 0 5px 0;;
+}
+.related .products h2{
+    text-align: center;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.inci-svg-title{
+    font-family: "lato";
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 500;
+}
+.inci-row{
+    padding: 30px 0;
+}
+.inci-title-sec{
+    font-family: "lato";
+    font-size: 25px;
+    text-align: center;
+    padding: 0px 0 1px 0;
+    font-weight: 400;
+}
+#subline-inci{
+    overflow: hidden;
+    vertical-align: middle;
+    width: 200px;
+    text-align: center;
+    fill: white;
+}
+.inci-tit-sec-box{
+    padding: 25px 0 45px 0;
+}
+.woocommerce h2 {
+    text-align: center;
+}
+
+.soap-icon-box img{
+    max-width: 65px;
 }
