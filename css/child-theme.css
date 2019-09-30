@@ -11629,12 +11629,14 @@ h4 {
   font-family: 'EB Garamond', serif; }
 
 .btn-outline-primary,
-.wpcf7 input[type=submit], .wpcf7 input[type=submit] {
+.wpcf7 input[type=submit],
+.wpcf7 input[type=submit] {
   color: #574676;
   border-color: #574676;
   background-color: white; }
 
-.btn-outline-primary:hover, .wpcf7 input:hover[type=submit], .wpcf7 input:hover[type=submit] {
+.btn-outline-primary:hover, .wpcf7 input:hover[type=submit],
+.wpcf7 input:hover[type=submit] {
   color: #fff;
   background-color: #574676;
   border-color: #574676; }
@@ -11650,20 +11652,42 @@ h4 {
   color: #fff; }
 
 .navbar-nav a {
-  font-weight: 400; }
+  font-weight: 500;
+  font-size: 20px; }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #2c2c2c;
-  text-transform: uppercase; }
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif; }
+
+#wrapper-navbar {
+  background-color: #574676; }
+
+.top-header-container {
+  background-color: #574676; }
+
+.nav-item {
+  margin-right: 20px; }
+
+.navbar-nav {
+  padding: 0px 0 25px 0; }
 
 .navbar-dark .navbar-brand {
   color: #2c2c2c; }
 
 .navbar-dark .navbar-nav .active > .nav-link {
-  color: #000; }
+  color: #fff;
+  font-weight: 600; }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #000; }
+  color: #fff;
+  font-weight: 600; }
+
+.search-ico {
+  color: #fff; }
+
+.navbar-brand {
+  padding: 20px; }
 
 p {
   color: #555555;
@@ -11673,14 +11697,14 @@ a {
   text-decoration: none !important; }
 
 h2 {
-  size: 60px; }
+  font-size: 3rem; }
 
 .bg-primary {
   background-color: #fff; }
 
 .img-fluid {
   max-width: 100%;
-  width: 150px;
+  width: 220px;
   height: auto; }
 
 #wrapper-footer-full {
@@ -11791,6 +11815,31 @@ ul.social-network li {
   font-weight: 400;
   margin-top: 20px; }
 
+.wc-proceed-to-checkout .btn,
+.wc-proceed-to-checkout .wpcf7 input[type=submit], .wpcf7 .wc-proceed-to-checkout input[type=submit] {
+  background-color: #574676;
+  text-transform: uppercase; }
+
+.place-order .btn,
+.place-order .wpcf7 input[type=submit], .wpcf7 .place-order input[type=submit] {
+  background-color: #574676;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  font-weight: 500;
+  font-size: 23px; }
+
+.woocommerce-form-coupon-toggle .woocommerce-info {
+  border: solid 2px #574676;
+  border-radius: 8px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #574676;
+  font-weight: 500; }
+
+.woocommerce-info::before {
+  color: #574676; }
+
 .btn-secondary {
   color: #fff;
   background-color: #574676;
@@ -11802,9 +11851,6 @@ ul.social-network li {
   text-shadow: 0 1px 0 rgba(0, 0, 1, 0.1) !important;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15) !important;
           box-shadow: 0 1px 3px rgba(0, 0, 1, 0.25), inset 0 1px 0 0 rgba(255, 255, 255, 0.15) !important; }
-
-.fa-search {
-  color: #2c2c2c; }
 
 .masonry-column {
   padding: 0 1px; }
@@ -11951,7 +11997,8 @@ ul.social-network li {
   font-size: 14px;
   font-weight: 500; }
 
-.woocommerce button.button.alt, .woocommerce input.button.alt {
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
   background-color: #574676;
   border: solid 1px #574676;
   word-spacing: 1px;
@@ -11960,7 +12007,8 @@ ul.social-network li {
   -webkit-font-smoothing: antialiased;
   text-transform: uppercase; }
 
-.woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
   background-color: #2c2c2c;
   color: #fff;
   border: solid 1px #574676;
@@ -11969,13 +12017,15 @@ ul.social-network li {
 .woocommerce button.button.alt.disabled {
   background-color: #574676; }
 
-.woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover {
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt.disabled:hover {
   background-color: #574676; }
 
-.woocommerce div.product p.price, .woocommerce div.product span.price {
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
   color: #2c2c2c;
   font-size: 1.8em;
-  font-weight: 500; }
+  font-weight: 300; }
 
 .woocommerce .woocommerce-breadcrumb {
   font-size: .92em;
@@ -12066,6 +12116,9 @@ a.add_to_wishlist.button.alt:hover {
   padding: 25px 0;
   font-weight: 500; }
 
+.inci-svg {
+  padding: 65px; }
+
 .inci-row {
   padding: 30px 0; }
 
@@ -12091,6 +12144,69 @@ a.add_to_wishlist.button.alt:hover {
 
 .soap-icon-box img {
   max-width: 65px; }
+
+/* # WooCommerce Cart Icon CSS with FontAwesome 5
+---------------------------------------------------------------------------------------------------- */
+.cart-contents {
+  position: relative;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.cart-contents:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f290" !important;
+  font-size: 20px;
+  color: #fff; }
+
+.cart-contents:hover {
+  text-decoration: none; }
+
+.cart-contents-count {
+  color: #2c2c2c;
+  background: transparent;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 1px 1px;
+  line-height: .5;
+  vertical-align: top;
+  font-weight: bold;
+  height: 17px;
+  width: 17px;
+  -webkit-transform: translateY(-105%) translateX(25%);
+          transform: translateY(-105%) translateX(25%);
+  font-size: 10px; }
+
+.woocommerce-message {
+  border-top-color: #574676; }
+
+.woocommerce-message::before {
+  color: #574676; }
+
+.woocommerce a.button {
+  background-color: #574676;
+  color: #fff; }
+
+.head-ico {
+  color: white;
+  font-size: 20px;
+  padding-right: 26px; }
+
+.head-ico:hover {
+  color: white;
+  font-size: 20px;
+  padding-right: 26px; }
+
+.top-search-field-wrapper [type=search] {
+  width: 100%; }
 
 /*
 * Use existing Bootstrap 4 classes and

@@ -80,6 +80,7 @@ function understrap_woocommerce_wrapper_end_for_single_product(){
     echo '</div><!-- .row -->';
     echo '</div><!-- Container end -->';
     echo '</div><!-- Wrapper end -->';
+    echo '</div><!-- Wrapper end -->';
 }
 /**
  * Function to move buy button on woocommerce single product
@@ -134,26 +135,26 @@ function change_rp_text($translated, $text, $domain)
      return $translated;
 }
 
-// Login/out function for woocommerce
-add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
+// // Login/out function for woocommerce
+// add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
 
-function add_loginout_link( $items, $args ) {
+// function add_loginout_link( $items, $args ) {
 
-  if (is_user_logged_in() && $args->theme_location == 'primary') {
+//   if (is_user_logged_in() && $args->theme_location == 'primary') {
 
-   $items .= '<li><a class="nav-log nav-link" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'">Log Out</a></li>';
+//    $items .= '<li><a class="nav-log nav-link" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'">Log Out</a></li>';
 
-  }
+//   }
 
-  elseif (!is_user_logged_in() && $args->theme_location == 'primary') {
+//   elseif (!is_user_logged_in() && $args->theme_location == 'primary') {
 
-   $items .= '<li><a class="nav-log nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">Log In/Registrati</a></li>';
+//    $items .= '<li><a class="nav-log nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">Log In/Registrati</a></li>';
 
-  }
+//   }
 
-  return $items;
+//   return $items;
 
-}
+// }
 
 // remove category on simple product page
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
@@ -166,3 +167,85 @@ function custom_single_product_banner() {
 
     echo $output;
 }
+
+/**
+ * Create Shortcode for WooCommerce Cart Menu Item
+ */
+function woo_cart_but() {
+	ob_start();
+ 
+        $cart_count = WC()->cart->cart_contents_count; // Set variable for cart item count
+        $cart_url = wc_get_cart_url();  // Set Cart URL
+  
+        ?>
+        <a class="cart-contents head-ico" href="<?php echo $cart_url; ?>" title="My Basket">
+	    <?php
+        if ( $cart_count > 0 ) {
+       ?>
+            <span class="cart-contents-count head-ico"><?php echo $cart_count; ?></span>
+        <?php
+        }
+        ?>
+        </a>
+        <?php
+	        
+    return ob_get_clean();}
+
+    // Add to cart button counter
+
+    add_filter( 'woocommerce_add_to_cart_fragments', 'woo_cart_but_count' );
+/**
+ * Add AJAX Shortcode when cart contents update
+ */
+function woo_cart_but_count( $fragments ) {
+ 
+    ob_start();
+    
+    $cart_count = WC()->cart->cart_contents_count;
+    $cart_url = wc_get_cart_url();
+    
+    ?>
+    <a class="cart-contents menu-item" href="<?php echo $cart_url; ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+	<?php
+    if ( $cart_count > 0 ) {
+        ?>
+        <span class="cart-contents-count"><?php echo $cart_count; ?></span>
+        <?php            
+    }
+        ?></a>
+    <?php
+ 
+    $fragments['a.cart-contents'] = ob_get_clean();
+     
+    return $fragments;
+}
+// Add to cart icon menu support
+add_filter( 'wp_nav_menu_top-menu_items', 'woo_cart_but_icon', 10, 2 ); // Change menu to suit - example uses 'top-menu'
+/**
+ * Add WooCommerce Cart Menu Item Shortcode to particular menu
+ */
+function woo_cart_but_icon ( $items, $args ) {
+       $items .=  '[woo_cart_but]'; // Adding the created Icon via the shortcode already created
+       
+       return $items;
+}
+
+// Shortcode creation for disply a bio icons box 
+function bio_icon_box_html_render( $atts, $content, $tag ) {  
+
+    ob_start();
+    get_template_part( 'global-templates/soap-icon-box' );
+    return ob_get_clean();}
+add_shortcode("bio_icon_box", "bio_icon_box_html_render"); 
+
+// Add to cart 
+add_shortcode ('woo_cart_but', 'woo_cart_but' );
+
+// Remove Sidebar from woo pages
+add_filter( 'genesis_site_layout', 'woocommerce_page_layout' );
+function woocommerce_page_layout() {
+    if ( is_page ( array( 'cart', 'checkout' )) || is_shop() || 'product' == get_post_type() || is_woocommerce() ) {
+        return 'full-width-content';
+    }
+}
+

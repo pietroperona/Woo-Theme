@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <body <?php body_class(); ?>>
 
 <div class="site" id="page">
-<div class="container">
+<div class="container-fluid top-header-container">
 	<div class="row">
 		<div class="col text-center">
 					<!-- Your site title as branding in the menu -->
@@ -80,7 +80,10 @@ the_custom_logo();
 				); ?>
 				
 				<div>
-					<a class="search-ico" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper">
+					<a href="/carrello" class="head-ico"><i class="fas fa-shopping-cart"></i></a>
+					<a href="/wishlist" class="head-ico"><i class="far fa-heart"></i></a>
+					<a href="/my-account" class="head-ico"><i class="fas fa-user-circle"></i></a>
+					<a class="search-ico head-ico" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper">
 					<i class="fa fa-search"></i>
 					</a>
 				</div>
@@ -92,20 +95,22 @@ the_custom_logo();
 			<div class="wrapper topbar-search" id="full-width-search-wrapper">
 						<div class="container">
 							<div class="row">
-							<div class="col">
+							<div class="col-md-3"></div>
+							<div class="col-md-6">
 								<form id="nav-search-form" role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 								<i class="fa fa-search"></i>	
 									<label>
 										<input type="search" class="top-search-field-wrapper"
 											value="<?php echo get_search_query() ?>" name="s"
 											title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" 
-											placeholder="Ricerca nei contenuti ..."/>
+											placeholder="Ricerca prodotti..."/>
 									</label>
 										<a class="search-ico" data-toggle="collapse" href="#top-search-wrapper">
 										<span class="src-close"><i class="fa fa-close"></i></span>
 										</a>
 								</form>
 							</div>
+							<div class="col-md-3"></div>
 							
 							</div>
 						</div>
