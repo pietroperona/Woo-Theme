@@ -79,7 +79,7 @@ the_custom_logo();
 					)
 				); ?>
 				
-				<div class="header-ico-group">
+				<div class="header-ico-group d-none d-md-block">
 					<a href="/carrello" class="head-ico"><i class="fas fa-shopping-cart"></i></a>
 					<a href="/wishlist" class="head-ico"><i class="far fa-heart"></i></a>
 					<a href="/my-account" class="head-ico"><i class="fas fa-user-circle"></i></a>
@@ -90,6 +90,7 @@ the_custom_logo();
 
 
 		</nav><!-- .site-navigation -->
+
 		<!-- search collpse block -->
 		<div class="collapse" id="top-search-wrapper">
 			<div class="wrapper topbar-search" id="full-width-search-wrapper">
@@ -116,4 +117,14 @@ the_custom_logo();
 						</div>
 			</div>			
 		</div>
+
 	</div><!-- #wrapper-navbar end -->
+
+	<!-- mobile sticky icon e-commerce -->
+	<div class="header-ico-group-mobile scrollmenu-block scrollmenu-fixed text-center sticky-icon-header">
+		<a href="/carrello" class="head-ico-mobile"><i class="fas fa-shopping-cart"></i></a>
+		<a href="/wishlist" class="head-ico-mobile"><i class="far fa-heart"></i></a>
+		<a href="/my-account" class="head-ico-mobile"><i class="fas fa-user-circle"></i></a>
+		<a class="search-ico head-ico-mobile" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper"><i class="fa fa-search"></i></a>
+	</div>
+	<!-- end mobile sticky icon e-commerce -->
