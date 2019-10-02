@@ -718,3 +718,38 @@ a.add_to_wishlist.button.alt:hover {
 .header-ico-group{
     padding: 0 0 25px 0;
 }
+.header-ico-group-mobile{
+    padding: 20px 0 20px 0;
+    background-color: $secondary;
+}
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+}
+div.sticky-icon-header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+    z-index: 699;
+}
+.head-ico-mobile{
+    color: white;
+    font-size: 20px;
+    // padding-right:26px;
+    padding: .5rem 1.8rem;
+}
+
+.head-ico-mobile:hover{
+    color: white;
+    font-size: 20px;
+}
+.wpml-ls-display{
+    color: white;
+    font-size: 20px;
+    // padding-right:26px;
+    padding: .5rem 1.8rem;
+}

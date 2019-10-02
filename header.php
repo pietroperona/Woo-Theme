@@ -126,5 +126,7 @@ the_custom_logo();
 		<a href="/wishlist" class="head-ico-mobile"><i class="far fa-heart"></i></a>
 		<a href="/my-account" class="head-ico-mobile"><i class="fas fa-user-circle"></i></a>
 		<a class="search-ico head-ico-mobile" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper"><i class="fa fa-search"></i></a>
+<!-- <?php do_action('wpml_add_language_selector'); ?> -->
+
 	</div>
 	<!-- end mobile sticky icon e-commerce -->
