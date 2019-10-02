@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div>
 
 <div class="container home-prod-cat">
-	<!-- Row category box x3-->
+	<!-- Row category box X3-->
 	<div class="row row-cat">
 
 		<!-- Column category box -->

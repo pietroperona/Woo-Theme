@@ -704,14 +704,17 @@ a.add_to_wishlist.button.alt:hover {
 .head-ico{
     color: white;
     font-size: 20px;
-    padding-right:26px;
+    // padding-right:26px;
+    padding: .5rem 1rem;
 }
 
 .head-ico:hover{
     color: white;
     font-size: 20px;
-    padding-right:26px;
 }
 .top-search-field-wrapper [type=search]{
     width: 100%;
+}
+.header-ico-group{
+    padding: 0 0 25px 0;
 }

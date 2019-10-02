@@ -79,7 +79,7 @@ the_custom_logo();
 					)
 				); ?>
 				
-				<div>
+				<div class="header-ico-group">
 					<a href="/carrello" class="head-ico"><i class="fas fa-shopping-cart"></i></a>
 					<a href="/wishlist" class="head-ico"><i class="far fa-heart"></i></a>
 					<a href="/my-account" class="head-ico"><i class="fas fa-user-circle"></i></a>
