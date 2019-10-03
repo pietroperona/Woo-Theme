@@ -46,11 +46,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php } else {
 the_custom_logo();
-} ?><!-- end custom logo -->
+} ?>
+
+<!-- end custom logo -->
 		</div>
 	</div>
 </div>
+
 	<!-- ******************* The Navbar Area ******************* -->
+
+	<!-- <div class="container-fluid top-header-container">
+	<img src="<?php echo get_theme_mod( 'your_theme_mobile_logo' ); ?>" alt="mobile-AYLM-logo" class="d-sm-none">
+	</div> -->
+
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
@@ -61,9 +69,29 @@ the_custom_logo();
 			<div class="container">
 		<?php endif; ?>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+				<script>
+				jQuery(document).ready(function () {
+
+					jQuery('.first-button').on('click', function () {
+
+						jQuery('.animated-icon1').toggleClass('open');
+				});
+				jQuery('.second-button').on('click', function () {
+
+					jQuery('.animated-icon2').toggleClass('open');
+				});
+				jQuery('.third-button').on('click', function () {
+
+					jQuery('.animated-icon3').toggleClass('open');
+				});
+				});
+				</script>
+				<!-- Collapse button -->
+				<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+					<div class="animated-icon1"><span></span><span></span><span></span></div>
 				</button>
+				<img src="<?php echo get_theme_mod( 'your_theme_mobile_logo' ); ?>" alt="mobile-AYLM-logo" class="navbar-brand-mobile d-sm-none">
+
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -121,7 +149,7 @@ the_custom_logo();
 	</div><!-- #wrapper-navbar end -->
 
 	<!-- mobile sticky icon e-commerce -->
-	<div class="header-ico-group-mobile scrollmenu-block scrollmenu-fixed text-center sticky-icon-header">
+	<div class="header-ico-group-mobile scrollmenu-block scrollmenu-fixed text-center sticky-icon-header d-sm-none">
 		<a href="/carrello" class="head-ico-mobile"><i class="fas fa-shopping-cart"></i></a>
 		<a href="/wishlist" class="head-ico-mobile"><i class="far fa-heart"></i></a>
 		<a href="/my-account" class="head-ico-mobile"><i class="fas fa-user-circle"></i></a>
