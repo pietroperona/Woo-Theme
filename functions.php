@@ -135,27 +135,6 @@ function change_rp_text($translated, $text, $domain)
      return $translated;
 }
 
-// // Login/out function for woocommerce
-// add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
-
-// function add_loginout_link( $items, $args ) {
-
-//   if (is_user_logged_in() && $args->theme_location == 'primary') {
-
-//    $items .= '<li><a class="nav-log nav-link" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'">Log Out</a></li>';
-
-//   }
-
-//   elseif (!is_user_logged_in() && $args->theme_location == 'primary') {
-
-//    $items .= '<li><a class="nav-log nav-link" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">Log In/Registrati</a></li>';
-
-//   }
-
-//   return $items;
-
-// }
-
 // remove category on simple product page
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 
@@ -164,6 +143,15 @@ add_action( 'woocommerce_after_single_product_summary', 'custom_single_product_b
 function custom_single_product_banner() {
 
     $output = get_template_part( 'global-templates/inci-block' );
+
+    echo $output;
+}
+
+// Add Saponi Block on Simple Product page Woocommerce
+add_action( 'woocommerce_after_single_product_summary', 'custom_single_product_banner', 12 );
+function custom_single_product_banner() {
+
+    $output = get_template_part( 'global-templates/box-saponi' );
 
     echo $output;
 }

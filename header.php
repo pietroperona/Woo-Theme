@@ -90,7 +90,9 @@ the_custom_logo();
 				<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<div class="animated-icon1"><span></span><span></span><span></span></div>
 				</button>
+				<!-- Mobile navbar logo -->
 				<img src="<?php echo get_theme_mod( 'your_theme_mobile_logo' ); ?>" alt="mobile-AYLM-logo" class="navbar-brand-mobile d-sm-none">
+				<!-- End of Mobile navbar logo -->
 
 
 				<!-- The WordPress Menu goes here -->
@@ -118,6 +120,20 @@ the_custom_logo();
 
 
 		</nav><!-- .site-navigation -->
+	
+
+	</div><!-- #wrapper-navbar end -->
+
+	<!-- mobile sticky icon e-commerce -->
+	<div class="header-ico-group-mobile scrollmenu-block scrollmenu-fixed text-center sticky-icon-header d-sm-none">
+		<a href="/carrello" class="head-ico-mobile"><i class="fas fa-shopping-cart"></i></a>
+		<a href="/wishlist" class="head-ico-mobile"><i class="far fa-heart"></i></a>
+		<a href="/my-account" class="head-ico-mobile"><i class="fas fa-user-circle"></i></a>
+		<a class="search-ico head-ico-mobile" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper"><i class="fa fa-search"></i></a>
+		<!-- <?php do_action('wpml_add_language_selector'); ?> -->
+	</div>
+	<!-- end mobile sticky icon e-commerce -->
+
 
 		<!-- search collpse block -->
 		<div class="collapse" id="top-search-wrapper">
@@ -145,16 +161,4 @@ the_custom_logo();
 						</div>
 			</div>			
 		</div>
-
-	</div><!-- #wrapper-navbar end -->
-
-	<!-- mobile sticky icon e-commerce -->
-	<div class="header-ico-group-mobile scrollmenu-block scrollmenu-fixed text-center sticky-icon-header d-sm-none">
-		<a href="/carrello" class="head-ico-mobile"><i class="fas fa-shopping-cart"></i></a>
-		<a href="/wishlist" class="head-ico-mobile"><i class="far fa-heart"></i></a>
-		<a href="/my-account" class="head-ico-mobile"><i class="fas fa-user-circle"></i></a>
-		<a class="search-ico head-ico-mobile" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper"><i class="fa fa-search"></i></a>
-<!-- <?php do_action('wpml_add_language_selector'); ?> -->
-
-	</div>
-	<!-- end mobile sticky icon e-commerce -->
+		<!-- End of search collpse block -->
