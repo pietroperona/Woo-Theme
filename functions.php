@@ -148,10 +148,19 @@ function custom_single_product_banner() {
 }
 
 // Add Saponi Block on Simple Product page Woocommerce
-add_action( 'woocommerce_after_single_product_summary', 'custom_single_product_banner', 12 );
-function custom_single_product_banner() {
+add_action( 'woocommerce_after_single_product_summary', 'saponi_single_product_banner', 12 );
+function saponi_single_product_banner() {
 
     $output = get_template_part( 'global-templates/box-saponi' );
+
+    echo $output;
+}
+
+// Add Pre/After Block on Simple Product page Woocommerce
+add_action( 'woocommerce_after_single_product_summary', 'preafter_single_product_banner', 12 );
+function preafter_single_product_banner() {
+
+    $output = get_template_part( 'global-templates/box-afterpre' );
 
     echo $output;
 }
