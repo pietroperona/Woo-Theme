@@ -63,8 +63,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</g>
 					</g>
 			</svg>
+			<?php 
+
+			$link = get_field('home_link_1');
+
+			if( $link ): ?>
+				<a href="<?php echo $link; ?>">
 				<img class="img-product-box center" src="<?php echo get_field('image-cat-box-1'); ?>" alt="<?php echo $alt; ?>"/>	
 				<h4 class="home-title-prod-cat"><?php the_field('title-cat-box-1'); ?></h4>	
+				</a>
+			<?php endif; ?>
+
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1906.5 11.2" style="enable-background:new 0 0 1906.5 11.2;" xml:space="preserve">
 				<g>
 					<g id="Layer_1-2">
@@ -110,8 +119,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</g>
 					</g>
 			</svg>
+				<?php 
+
+				$link = get_field('home_link_2');
+
+				if( $link ): ?>
+				<a href="<?php echo $link; ?>">
 				<img class="img-product-box center" src="<?php echo get_field('image-cat-box-2'); ?>" alt="<?php echo $alt; ?>"/>	
-				<h4 class="home-title-prod-cat"><?php the_field('title-cat-box-2'); ?></h4>	
+				<h4 class="home-title-prod-cat"><?php the_field('title-cat-box-2'); ?></h4>
+				</a>
+				<?php endif; ?>
+
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1906.5 11.2" style="enable-background:new 0 0 1906.5 11.2;" xml:space="preserve">
 				<g>
 					<g id="Layer_1-2">
@@ -157,8 +175,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</g>
 					</g>
 			</svg>
+
+				<?php 
+
+				$link = get_field('home_link_3');
+
+				if( $link ): ?>
+				<a href="<?php echo $link; ?>">
 				<img class="img-product-box center" src="<?php echo get_field('image-cat-box-3'); ?>" alt="<?php echo $alt; ?>"/>	
-				<h4 class="home-title-prod-cat"><?php the_field('title-cat-box-3'); ?></h4>		
+				<h4 class="home-title-prod-cat"><?php the_field('title-cat-box-3'); ?></h4>
+				</a>
+				<?php endif; ?>
+
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1906.5 11.2" style="enable-background:new 0 0 1906.5 11.2;" xml:space="preserve">
 				<g>
 					<g id="Layer_1-2">

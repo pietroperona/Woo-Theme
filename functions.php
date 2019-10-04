@@ -286,3 +286,16 @@ add_filter( 'woocommerce_product_description_heading', 'rename_product_descripti
 function rename_product_description_heading( $heading ) {
     return  __( 'Esperienza', 'woocommerce' );
 }
+
+// Replace add to cart button by a linked button to the product in Shop and archives pages
+add_filter( 'woocommerce_loop_add_to_cart_link', 'replace_loop_add_to_cart_button', 10, 2 );
+function replace_loop_add_to_cart_button( $button, $product  ) {
+    // Not needed for variable products
+    if( $product->is_type( 'variable' ) ) return $button;
+
+    // Button text here
+    $button_text = __( "Shop Now", "woocommerce" );
+
+    return '<a class="add_to_cart_button product_type_simple single_add_to_cart_button btn btn-outline-primary btn-block ajax_add_to_cart" href="' . $product->get_permalink() . '">' . $button_text . '</a>';
+}
+

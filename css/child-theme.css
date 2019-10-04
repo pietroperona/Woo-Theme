@@ -12384,13 +12384,37 @@ div.sticky-icon-header {
   border: none; }
 
 .woocommerce_product_categories-2 {
-  padding: 25px 10px; }
+  padding: 25px 0px; }
+
+ul {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px; }
 
 .widget_product_search {
   padding: 0 0 45px 0; }
 
 .widget_price_filter {
   padding: 0 0 45px 0; }
+
+li.cat-item {
+  list-style-type: none;
+  font-weight: 300; }
+
+li.cat-item.cat-parent {
+  font-weight: bold; }
+
+.widget-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-bottom: 10px; }
+
+.topbar-search {
+  background-color: #574676; }
+
+.fa-search {
+  color: white; }
 
 /*
 * Use existing Bootstrap 4 classes and
