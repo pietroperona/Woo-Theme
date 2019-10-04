@@ -12260,7 +12260,9 @@ div.sticky-icon-header {
   background-color: #574676; }
 
 /* Icon 1 */
-.animated-icon1, .animated-icon2, .animated-icon3 {
+.animated-icon1,
+.animated-icon2,
+.animated-icon3 {
   width: 30px;
   height: 20px;
   position: relative;
@@ -12271,7 +12273,9 @@ div.sticky-icon-header {
   transition: .5s ease-in-out;
   cursor: pointer; }
 
-.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+.animated-icon1 span,
+.animated-icon2 span,
+.animated-icon3 span {
   display: block;
   position: absolute;
   height: 3px;
@@ -12320,7 +12324,8 @@ div.sticky-icon-header {
 .animated-icon2 span:nth-child(1) {
   top: 0px; }
 
-.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+.animated-icon2 span:nth-child(2),
+.animated-icon2 span:nth-child(3) {
   top: 10px; }
 
 .animated-icon2 span:nth-child(4) {
@@ -12415,6 +12420,39 @@ li.cat-item.cat-parent {
 
 .fa-search {
   color: white; }
+
+.top-search-field-wrapper[type=search] {
+  background-color: #574676;
+  border: none;
+  color: white;
+  padding: 0 25px; }
+
+.top-search-field-wrapper {
+  width: 600px; }
+
+.top-search-field-wrapper[type=search]::-webkit-input-placeholder {
+  color: white;
+  text-align: center; }
+
+.top-search-field-wrapper[type=search]::-moz-placeholder {
+  color: white;
+  text-align: center; }
+
+.top-search-field-wrapper[type=search]:-ms-input-placeholder {
+  color: white;
+  text-align: center; }
+
+.top-search-field-wrapper[type=search]::-ms-input-placeholder {
+  color: white;
+  text-align: center; }
+
+.top-search-field-wrapper[type=search]::placeholder {
+  color: white;
+  text-align: center; }
+
+.top-search-field-wrapper[type=search]:focus {
+  border-color: #574676;
+  outline: none; }
 
 /*
 * Use existing Bootstrap 4 classes and
