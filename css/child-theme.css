@@ -12113,11 +12113,14 @@ a.add_to_wishlist.button.alt:hover {
   font-family: "lato";
   font-size: 20px;
   text-align: center;
-  padding: 25px 0;
+  padding: 10px 0;
   font-weight: 500; }
 
+.woocommerce img.inci-svg {
+  max-width: 60%; }
+
 .inci-svg {
-  padding: 65px; }
+  padding: 25px; }
 
 .inci-row {
   padding: 30px 0; }
@@ -12379,6 +12382,15 @@ div.sticky-icon-header {
   line-height: 1;
   background-color: none;
   border: none; }
+
+.woocommerce_product_categories-2 {
+  padding: 25px 10px; }
+
+.widget_product_search {
+  padding: 0 0 45px 0; }
+
+.widget_price_filter {
+  padding: 0 0 45px 0; }
 
 /*
 * Use existing Bootstrap 4 classes and

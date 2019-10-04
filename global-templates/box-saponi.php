@@ -29,22 +29,31 @@ defined( 'ABSPATH' ) || exit;
                     </svg>	
                 </div>
 
-                <!-- Blocco Base Sapone -->
+                <!-- Blocco Base Sapone riga1 -->
                 <div class="row">
                     <!-- Base Sapone elemento 1    -->
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <img class="text-center inci-svg center-block" src="<?php the_field('s_base_ico_1'); ?>" />
                         <h3 class="inci-svg-title"><?php the_field('s_base_title_1'); ?></h3>                
                     </div>
                     <!-- Base Sapone elemento 2    -->
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <img class="text-center inci-svg center-block" src="<?php the_field('s_base_ico_2'); ?>" />
                         <h3 class="inci-svg-title"><?php the_field('s_base_title_2'); ?></h3>                
                     </div>
+                </div>
+                <!-- End of Blocco Base Sapone -->
+                <!-- Blocco Base Sapone riga2 -->
+                <div class="row">
                     <!-- Base Sapone elemento 3    -->
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <img class="text-center inci-svg center-block" src="<?php the_field('s_base_ico_3'); ?>" />
                         <h3 class="inci-svg-title"><?php the_field('s_base_title_3'); ?></h3>                
+                    </div>
+                    <!-- Base Sapone elemento 4    -->
+                    <div class="col-md-6">
+                        <img class="text-center inci-svg center-block" src="<?php the_field('s_base_ico_4'); ?>" />
+                        <h3 class="inci-svg-title"><?php the_field('s_base_title_4'); ?></h3>                
                     </div>
                 </div>
                 <!-- End of Blocco Base Sapone -->

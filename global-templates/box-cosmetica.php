@@ -1,6 +1,6 @@
 <?php
 /**
- * Box After/pre setup.
+ * Box Cosmetica setup.
  *
  * @package understrap
  */
@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 
-<?php if( get_field('after_pre_switch') ): ?>
+<?php if( get_field('cosmetica_switch') ): ?>
 
     <div class="continer container-inci">
         <h2 class="inci-title">Ingredienti principali</h2>

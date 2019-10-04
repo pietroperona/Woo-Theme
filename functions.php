@@ -46,11 +46,13 @@ function wpb_widgets_init() {
     ) );
  
     register_sidebar( array(
-        'name' =>__( 'Homepage Donna', 'wpb'),
+        'name' => __( 'Hompage Donna', 'wpb' ),
         'id' => 'home-donna',
         'description' => __( 'Qui inserisci lo slider per la collezione donna da visualizzare in homepage', 'wpb' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title donna-home-slider">',
+        'after_title' => '</h3>',
     ) );
     }
  
@@ -138,16 +140,16 @@ function change_rp_text($translated, $text, $domain)
 // remove category on simple product page
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 
-// Add Inci Block on Simple Product page Woocommerce
-add_action( 'woocommerce_after_single_product_summary', 'custom_single_product_banner', 12 );
-function custom_single_product_banner() {
+// Add Inci Block on Simple Product page Woocommerce (ACF)
+// add_action( 'woocommerce_after_single_product_summary', 'custom_single_product_banner', 12 );
+// function custom_single_product_banner() {
 
-    $output = get_template_part( 'global-templates/inci-block' );
+//     $output = get_template_part( 'global-templates/inci-block' );
 
-    echo $output;
-}
+//     echo $output;
+// }
 
-// Add Saponi Block on Simple Product page Woocommerce
+// Add Saponi Block on Simple Product page Woocommerce (ACF)
 add_action( 'woocommerce_after_single_product_summary', 'saponi_single_product_banner', 12 );
 function saponi_single_product_banner() {
 
@@ -156,11 +158,20 @@ function saponi_single_product_banner() {
     echo $output;
 }
 
-// Add Pre/After Block on Simple Product page Woocommerce
+// Add Pre/After Block on Simple Product page Woocommerce (ACF)
 add_action( 'woocommerce_after_single_product_summary', 'preafter_single_product_banner', 12 );
 function preafter_single_product_banner() {
 
     $output = get_template_part( 'global-templates/box-afterpre' );
+
+    echo $output;
+}
+
+// Add Cosmetica Block on Simple Product page Woocommerce (ACF)
+add_action( 'woocommerce_after_single_product_summary', 'cosmetica_single_product_banner', 12 );
+function cosmetica_single_product_banner() {
+
+    $output = get_template_part( 'global-templates/box-cosmetica' );
 
     echo $output;
 }
@@ -258,3 +269,20 @@ function your_theme_customizer_setting($wp_customize) {
     }
     
     add_action('customize_register', 'your_theme_customizer_setting');
+
+/**
+ * Rename product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+
+	$tabs['description']['title'] = __( 'Esperienza' );		// Rename the description tab
+
+
+	return $tabs;
+
+}
+add_filter( 'woocommerce_product_description_heading', 'rename_product_description_heading', 10, 1 );
+function rename_product_description_heading( $heading ) {
+    return  __( 'Esperienza', 'woocommerce' );
+}

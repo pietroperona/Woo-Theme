@@ -177,8 +177,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="container home-product-slider">
 <h2 class="home-product-slider-title">DONNA</h2>
-<?php if ( is_active_sidebar( 'home-uomo' ) ) : ?>
-    <?php dynamic_sidebar( 'home-uomo' ); ?>
+<?php if ( is_active_sidebar( 'home-donna' ) ) : ?>
+    <?php dynamic_sidebar( 'home-donna' ); ?>
 	<?php endif; ?>
 </div>
 
