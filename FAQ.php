@@ -22,22 +22,22 @@ $container = get_theme_mod( 'understrap_container_type' );
           <div class="col-lg-4">
               <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
                   <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
-                      <i class="mdi mdi-help-circle"></i> Frequently Asked Questions
+                  <i class="fas fa-globe-europe faq-ico"></i> <?php the_field('faq_sec_tit_1'); ?>
                   </a>
                   <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
-                      <i class="mdi mdi-account"></i> Profile
+                  <i class="fas fa-sign-in-alt faq-ico"></i> <?php the_field('faq_sec_tit_2'); ?>
                   </a>
                   <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
-                      <i class="mdi mdi-account-settings"></i> Account
+                  <i class="fas fa-shopping-basket faq-ico"></i> <?php the_field('faq_sec_tit_3'); ?>
                   </a>
                   <a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
-                      <i class="mdi mdi-heart"></i> Favorites
+                  <i class="fas fa-gifts faq-ico"></i> <?php the_field('faq_sec_tit_4'); ?>
                   </a>
                   <a href="#tab5" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false">
-                      <i class="mdi mdi-coin"></i> Transactions
+                  <i class="far fa-credit-card faq-ico"></i><?php the_field('faq_sec_tit_5'); ?>
                   </a>
                   <a href="#tab6" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab6" aria-selected="false">
-                      <i class="mdi mdi-help"></i> General help
+                  <i class="fas fa-truck faq-ico"></i> <?php the_field('faq_sec_tit_6'); ?>
                   </a>
               </div>
           </div>

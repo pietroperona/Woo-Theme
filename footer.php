@@ -44,7 +44,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-					<p>P.IVA: IT01638000537 - <a href="#">Privacy</a> - <a href="#">Cookie Policy</a> - <a href="https://www.koodit.it">Credits</a> - <a href="#">Company Info</a></p>
+					<p>P.IVA: IT01638000537 - <a target="_blank" href="/privacy-policy/">Privacy</a> - <a target="_blank" href="https://www.iubenda.com/privacy-policy/51778837/cookie-policy">Cookie Policy</a> - <a target="_blank" href="https://www.koodit.it">Credits</a> - <a target="_blank" href="/company-info">Company Info</a></p>
 
 					</div><!-- .site-info -->
 

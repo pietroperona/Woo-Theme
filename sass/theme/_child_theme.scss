@@ -187,7 +187,10 @@ ul.social-network {
 
 ul.social-network li {
     display: inline;
-    margin: 0 5px;
+    margin: 0 8px;
+}
+ul.payments-ico li{
+    margin: 0 5px;  
 }
 
 .social-circle li a {
@@ -195,7 +198,7 @@ ul.social-network li {
     position: relative;
     margin: 0 auto 0 auto;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .social-circle li i {
@@ -729,6 +732,7 @@ a.add_to_wishlist.button.alt:hover {
 
 .header-ico-group {
     padding: 0 0 25px 0;
+    display: flex;
 }
 
 .header-ico-group-mobile {
@@ -1144,4 +1148,32 @@ li.cat-item.cat-parent {
     .card-body {
         border-bottom: 1px solid rgba(0,0,0,.125);
     }
+}
+
+.faq-ico{
+    padding-right: 10px;
+}
+
+ol{
+    padding-inline-start: 0px;
+}
+.entry-header h1{
+    text-align: center;
+    padding: 35px 0;
+    font-family: 'EB Garamond', serif;
+}
+.coming-soon-title{
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 35px 0;
+    font-family: 'EB Garamond', serif;
+}
+
+.coming-soon-container{
+    padding: 65px 0;
+}
+
+.single-product.woocommerce .quantity .qty {
+    display: none;
 }

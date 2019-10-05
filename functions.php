@@ -110,11 +110,7 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
     );
     } );
 
-    // Hide woocommerce quantity_fields in product
-    function woo_remove_all_quantity_fields( $return, $product ) {
-        return true;
-      }
-      add_filter( 'woocommerce_is_sold_individually', 'woo_remove_all_quantity_fields', 10, 2 );
+    
 
       //align wishlist button to add to cart
 if( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_move_wishlist_button' ) ){

@@ -11764,6 +11764,9 @@ ul.social-network {
 
 ul.social-network li {
   display: inline;
+  margin: 0 8px; }
+
+ul.payments-ico li {
   margin: 0 5px; }
 
 .social-circle li a {
@@ -11771,7 +11774,7 @@ ul.social-network li {
   position: relative;
   margin: 0 auto 0 auto;
   text-align: center;
-  font-size: 25px; }
+  font-size: 30px; }
 
 .social-circle li i {
   margin: 0;
@@ -12211,7 +12214,10 @@ a.add_to_wishlist.button.alt:hover {
   width: 100%; }
 
 .header-ico-group {
-  padding: 0 0 25px 0; }
+  padding: 0 0 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .header-ico-group-mobile {
   padding: 20px 0 20px 0;
@@ -12526,6 +12532,31 @@ li.cat-item.cat-parent {
 
 .collapse.show .card-body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+.faq-ico {
+  padding-right: 10px; }
+
+ol {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px; }
+
+.entry-header h1 {
+  text-align: center;
+  padding: 35px 0;
+  font-family: 'EB Garamond', serif; }
+
+.coming-soon-title {
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  padding: 35px 0;
+  font-family: 'EB Garamond', serif; }
+
+.coming-soon-container {
+  padding: 65px 0; }
+
+.single-product.woocommerce .quantity .qty {
+  display: none; }
 
 /*
 * Use existing Bootstrap 4 classes and
