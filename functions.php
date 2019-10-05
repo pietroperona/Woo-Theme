@@ -299,3 +299,10 @@ function replace_loop_add_to_cart_button( $button, $product  ) {
     return '<a class="add_to_cart_button product_type_simple single_add_to_cart_button btn btn-outline-primary btn-block ajax_add_to_cart" href="' . $product->get_permalink() . '">' . $button_text . '</a>';
 }
 
+// disable all notification core, plugins ecc
+function remove_core_updates(){
+    global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+}
+add_filter('pre_site_transient_update_core','remove_core_updates');
+add_filter('pre_site_transient_update_plugins','remove_core_updates');
+add_filter('pre_site_transient_update_themes','remove_core_updates');
