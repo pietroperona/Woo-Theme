@@ -302,3 +302,12 @@ function remove_core_updates(){
 add_filter('pre_site_transient_update_core','remove_core_updates');
 add_filter('pre_site_transient_update_plugins','remove_core_updates');
 add_filter('pre_site_transient_update_themes','remove_core_updates');
+
+// override country-select.js [checkout button]
+
+add_action('wp_enqueue_scripts', 'override_wc_country_select');
+function override_wc_country_select() {
+	wp_deregister_script('wc-country-select');
+	wp_enqueue_script('wc-country-select', get_template_directory_uri() . '/woocommerce/js/country-select.js', array('jquery'), null, true);
+}
+
