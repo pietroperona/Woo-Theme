@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "http://woo-theme:8888",
+    "proxy": "http://localhost:3000/",
     "notify": false
   },
   "browserSyncWatchFiles" : [
