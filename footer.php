@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-					<p>© <?php echo date("Y"); ?> <b>ABBATE Y LA MANTIA S.r.l.</b> All rights reserved.  Grosseto, Via Fanti n. 18. Tuscany - Italy </p>
+					<p>© <?php echo date("Y"); ?> <b>ABBATE Y LA MANTIA SRL</b> All rights reserved.  Grosseto, Via Fanti n. 18. Tuscany - Italy </p>
 
 					</div><!-- .site-info -->
 

@@ -17,9 +17,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="page-wrapper">
 
-	<div class="container coming-soon-container">
+	<div class="container coming-soon-container text-center">
 	<h1 class="coming-soon-title">Coming Soon</h1>
-	<button onclick="goBack()">TORNA ALLA PAGINA PRECEDENTE</button>
+	<button class="text-center btn-outline-primary btn-cmsoon add_to_cart_button" onclick="goBack()">TORNA ALLA PAGINA PRECEDENTE</button>
 
 	<script>
 	function goBack() {

@@ -21,14 +21,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="row">
 		<div class="col-md-6">
 		<div>
-			<img src="/wp-content/themes/understrap-child/img/AYLM_logo_classic_black.svg" alt="logo" class="logo-contact">
+			<!-- <img src="/wp-content/themes/understrap-child/img/AYLM_logo_classic_black.svg" alt="logo" class="logo-contact"> -->
 		</div>
-		<h2>Abbate Y La Mantia</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minus placeat ea et harum aspernatur facere quibusdam voluptatum, deleniti, molestiae itaque praesentium temporibus quod amet id error dicta. Illum, et?</p>
+		<h2 class="ct-title"><?php echo get_field('contact_col_1_title'); ?></h2>
+		<p><?php echo get_field('contact_col_1_body'); ?></p>
 		</div>
 		<div class="col-md-6">
 			<div>
-				<h2>Contattaci</h2>
+				<h2 class="ct-title"><?php echo get_field('contact_col_2_title'); ?></h2>
 				<?php echo get_field('contact_form'); ?>
 			</div>	
 		</div>

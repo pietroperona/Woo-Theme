@@ -94,6 +94,9 @@ the_custom_logo();
 				<img src="<?php echo get_theme_mod( 'your_theme_mobile_logo' ); ?>" alt="mobile-AYLM-logo" class="navbar-brand-mobile d-sm-none">
 				<!-- End of Mobile navbar logo -->
 
+				<div class="header-lang-group lang-sel d-none d-md-block" >
+				<?php do_action('wpml_add_language_selector'); ?>
+				</div>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -123,6 +126,9 @@ the_custom_logo();
 	
 
 	</div><!-- #wrapper-navbar end -->
+
+
+	<div class="header-ico-group-mobile text-center d-sm-none"><?php do_action('wpml_add_language_selector'); ?></div>
 
 	<!-- mobile sticky icon e-commerce -->
 	<div class="header-ico-group-mobile scrollmenu-block scrollmenu-fixed text-center sticky-icon-header d-sm-none">

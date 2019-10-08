@@ -189,8 +189,9 @@ ul.social-network li {
     display: inline;
     margin: 0 8px;
 }
-ul.payments-ico li{
-    margin: 0 5px;  
+
+ul.payments-ico li {
+    margin: 0 5px;
 }
 
 .social-circle li a {
@@ -360,6 +361,7 @@ ul.payments-ico li{
 
 #ywcps_layout1 .single_product_container .product_other_info .product_name span {
     font-weight: 600 !important;
+    font-size: 1.2em;
 }
 
 // Product cat box home style
@@ -658,6 +660,7 @@ a.add_to_wishlist.button.alt:hover {
 
 .woocommerce h2 {
     text-align: center;
+    padding-bottom: 35px;
 }
 
 .soap-icon-box img {
@@ -733,6 +736,13 @@ a.add_to_wishlist.button.alt:hover {
 .header-ico-group {
     padding: 0 0 25px 0;
     display: flex;
+    flex-grow: 1;
+}
+
+.header-lang-group {
+    padding: 0 0 25px 0;
+    display: flex;
+    flex-grow: 3;
 }
 
 .header-ico-group-mobile {
@@ -773,7 +783,7 @@ div.sticky-icon-header {
     color: white;
     font-size: 20px;
     // padding-right:26px;
-    padding: .5rem 1.8rem;
+    padding: .5rem 0.2rem;
 }
 
 .navbar-brand {
@@ -1039,7 +1049,8 @@ li.cat-item.cat-parent {
     border-color: $secondary;
     outline: none;
 }
-#order_review_heading{
+
+#order_review_heading {
     padding: 15px 0;
 }
 
@@ -1047,10 +1058,10 @@ li.cat-item.cat-parent {
 .faq-nav {
     flex-direction: column;
     margin: 0 0 32px;
-    border-radius: 2px;    
+    border-radius: 2px;
     border: 1px solid #ddd;
     box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
-    
+
     .nav-link {
         position: relative;
         display: block;
@@ -1062,23 +1073,23 @@ li.cat-item.cat-parent {
         border-radius: 0;
         color: #616161;
         transition: background-color .2s ease;
-        
+
         &:hover {
             background-color: #f6f6f6;
         }
-        
+
         &.active {
-            background-color: #f6f6f6;
+            background-color: $secondary;
             font-weight: 700;
-            color: rgba(0,0,0,.87);        
+            color: white;
         }
-        
+
         &:last-of-type {
             border-bottom-left-radius: 2px;
             border-bottom-right-radius: 2px;
             border-bottom: 0;
         }
-        
+
         i.mdi {
             margin-right: 5px;
             font-size: 18px;
@@ -1090,29 +1101,29 @@ li.cat-item.cat-parent {
 // TAB CONTENT
 .tab-content {
     box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
-    
+
     .card {
         border-radius: 0;
     }
-    
+
     .card-header {
         padding: 15px 16px;
         border-radius: 0;
         background-color: #f6f6f6;
-        
+
         h5 {
             margin: 0;
-            
+
             button {
                 display: block;
                 width: 100%;
                 padding: 0;
                 border: 0;
                 font-weight: 700;
-                color: rgba(0,0,0,.87);
+                color: rgba(0, 0, 0, .87);
                 text-align: left;
                 white-space: normal;
-                
+
                 &:hover,
                 &:focus,
                 &:active,
@@ -1122,11 +1133,11 @@ li.cat-item.cat-parent {
             }
         }
     }
-    
+
     .card-body {
         p {
             color: #616161;
-            
+
             &:last-of-type {
                 margin: 0;
             }
@@ -1137,32 +1148,34 @@ li.cat-item.cat-parent {
 
 // BORDER FIX
 .accordion {
-    > .card {
+    >.card {
         &:not(:first-child) {
             border-top: 0;
-        }   
+        }
     }
 }
 
 .collapse.show {
     .card-body {
-        border-bottom: 1px solid rgba(0,0,0,.125);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
     }
 }
 
-.faq-ico{
+.faq-ico {
     padding-right: 10px;
 }
 
-ol{
+ol {
     padding-inline-start: 0px;
 }
-.entry-header h1{
+
+.entry-header h1 {
     text-align: center;
     padding: 35px 0;
     font-family: 'EB Garamond', serif;
 }
-.coming-soon-title{
+
+.coming-soon-title {
     text-align: center;
     font-size: 45px;
     text-transform: uppercase;
@@ -1170,20 +1183,75 @@ ol{
     font-family: 'EB Garamond', serif;
 }
 
-.coming-soon-container{
-    padding: 65px 0;
+.coming-soon-container {
+    padding: 65px 70px;
 }
 
 .single-product.woocommerce .quantity .qty {
     display: none;
 }
-.logo-contact{
+
+.logo-contact {
     text-align: left;
     max-width: 350px;
 }
-div.wpcf7{
+
+div.wpcf7 {
+
     /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (max-width: 768px) {  
-  padding: 25px;
+    @media (max-width: 768px) {
+        padding: 25px;
+    }
 }
+
+.wpcf7 {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+}
+
+#ywcps_layout1 .single_product_container .product_other_info .product_name a {
+    color: #2c2c2c;
+    padding: .5em 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.ct-title {
+    padding: 25px 0;
+}
+
+// .navbar-collapse{
+//     flex-grow: 0;
+// }
+
+.lang-sel {
+    font-family: 'EB Garamond', serif;
+}
+
+.wpml-ls-current-language a {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    // padding: .5rem 0.2rem;
+}
+
+.wpml-ls-first-item{
+    border-right: 1px solid white;
+}
+
+.wpml-ls-legacy-list-horizontal a {
+    padding: 0px 10px;
+}
+.wpml-ls-legacy-list-horizontal .wpml-ls-item {
+    padding: 0 2px 0 8px;
+}
+#ywcps_layout1 .ywcps-wrapper .ywcps-slider ul.products li.single_product{
+    float: none !important;
+}
+.woocommerce .ywcps-wrapper .owl-item li.product{
+    width: 100%;
+}
+.btn-cmsoon{
+    padding: 10px 20px;
+    border-radius: 10px;
 }

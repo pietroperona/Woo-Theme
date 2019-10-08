@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>	
 
 <div class="container home-product-slider">
-<h2 class="home-product-slider-title">UOMO</h2>
+<h2 class="home-product-slider-title"><?php the_field('title_slider_1'); ?></h2>
 	<?php if ( is_active_sidebar( 'home-uomo' ) ) : ?>
     <?php dynamic_sidebar( 'home-uomo' ); ?>
 	<?php endif; ?>
@@ -204,7 +204,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 
 <div class="container home-product-slider">
-<h2 class="home-product-slider-title">DONNA</h2>
+<h2 class="home-product-slider-title"><?php the_field('title_slider_2'); ?></h2>
 <?php if ( is_active_sidebar( 'home-donna' ) ) : ?>
     <?php dynamic_sidebar( 'home-donna' ); ?>
 	<?php endif; ?>
