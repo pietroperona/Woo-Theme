@@ -59,7 +59,7 @@ the_custom_logo();
 	<img src="<?php echo get_theme_mod( 'your_theme_mobile_logo' ); ?>" alt="mobile-AYLM-logo" class="d-sm-none">
 	</div> -->
 
-	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+	<div id="wrapper-navbar" class="sticky-top sticky-offset" itemscope itemtype="http://schema.org/WebSite">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
@@ -151,10 +151,9 @@ the_custom_logo();
 								<form id="nav-search-form" role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 								<i class="fa fa-search"></i>	
 									<label>
-										<input type="search" class="top-search-field-wrapper"
-											value="<?php echo get_search_query() ?>" name="s"
-											title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" 
-											placeholder="Search..."/>
+
+											<input type="text"  class="top-search-field-wrapper" name="s" placeholder="Search product..." value="<?php the_search_query(); ?>">
+    										<input type="hidden" name="post_type" value="product">
 									</label>
 										<a class="search-ico" data-toggle="collapse" href="#top-search-wrapper">
 										<span class="src-close"><i class="fa fa-close"></i></span>

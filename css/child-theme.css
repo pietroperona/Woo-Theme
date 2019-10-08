@@ -11670,7 +11670,7 @@ h4 {
   margin-right: 20px; }
 
 .navbar-nav {
-  padding: 0px 0 25px 0; }
+  padding: 20px 0 20px 0; }
 
 .navbar-dark .navbar-brand {
   color: #2c2c2c; }
@@ -12216,7 +12216,7 @@ a.add_to_wishlist.button.alt:hover {
   width: 100%; }
 
 .header-ico-group {
-  padding: 0 0 25px 0;
+  padding: 20px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12225,7 +12225,7 @@ a.add_to_wishlist.button.alt:hover {
           flex-grow: 1; }
 
 .header-lang-group {
-  padding: 0 0 25px 0;
+  padding: 20px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12441,7 +12441,7 @@ li.cat-item.cat-parent {
 .fa-search {
   color: white; }
 
-.top-search-field-wrapper[type=search] {
+.top-search-field-wrapper[type=text] {
   background-color: #574676;
   border: none;
   color: white;
@@ -12450,27 +12450,27 @@ li.cat-item.cat-parent {
 .top-search-field-wrapper {
   width: 600px; }
 
-.top-search-field-wrapper[type=search]::-webkit-input-placeholder {
+.top-search-field-wrapper[type=stext]::-webkit-input-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=search]::-moz-placeholder {
+.top-search-field-wrapper[type=stext]::-moz-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=search]:-ms-input-placeholder {
+.top-search-field-wrapper[type=stext]:-ms-input-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=search]::-ms-input-placeholder {
+.top-search-field-wrapper[type=stext]::-ms-input-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=search]::placeholder {
+.top-search-field-wrapper[type=stext]::placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=search]:focus {
+.top-search-field-wrapper[type=text]:focus {
   border-color: #574676;
   outline: none; }
 
@@ -12621,6 +12621,11 @@ div.wpcf7 {
 .btn-cmsoon {
   padding: 10px 20px;
   border-radius: 10px; }
+
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+  width: 200px !important; }
 
 /*
 * Use existing Bootstrap 4 classes and
