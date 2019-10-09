@@ -25,10 +25,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
+<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 
 <div class="site" id="page">
 <div class="container-fluid top-header-container">
 	<div class="row">
+		<!-- Collapse mobile button -->
+		<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+					<div class="animated-icon1"><span></span><span></span><span></span></div>
+		</button>
+		<!-- End of mobile Collapse button -->
+
 		<div class="col text-center">
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
@@ -86,12 +93,10 @@ the_custom_logo();
 				});
 				});
 				</script>
-				<!-- Collapse button -->
-				<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<div class="animated-icon1"><span></span><span></span><span></span></div>
-				</button>
+				
+				
 				<!-- Mobile navbar logo -->
-				<img src="<?php echo get_theme_mod( 'your_theme_mobile_logo' ); ?>" alt="mobile-AYLM-logo" class="navbar-brand-mobile d-sm-none">
+				<!-- <img src="<?php echo get_theme_mod( 'your_theme_mobile_logo' ); ?>" alt="mobile-AYLM-logo" class="navbar-brand-mobile d-sm-none"> -->
 				<!-- End of Mobile navbar logo -->
 
 				<div class="header-lang-group lang-sel d-none d-md-block" >
