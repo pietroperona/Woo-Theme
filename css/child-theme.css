@@ -11689,6 +11689,10 @@ h4 {
 .navbar-brand {
   padding: 20px; }
 
+.nav-logo-custom {
+  width: 450px;
+  padding: 45px 0 10px 0; }
+
 p {
   color: #555555;
   font-weight: 300; }
@@ -11909,6 +11913,9 @@ ul.payments-ico li {
   text-align: center;
   padding: 25px 0; }
 
+.home-prod-cat {
+  margin: 55px auto; }
+
 .img-product-box img {
   min-width: 100px; }
 
@@ -12127,7 +12134,7 @@ a.add_to_wishlist.button.alt:hover {
   padding: 25px; }
 
 .inci-row {
-  padding: 30px 0; }
+  padding: 18px 0; }
 
 .inci-title-sec {
   font-family: "lato";
@@ -12144,11 +12151,14 @@ a.add_to_wishlist.button.alt:hover {
   fill: white; }
 
 .inci-tit-sec-box {
-  padding: 25px 0 45px 0; }
+  padding: 5px 0 5px 0; }
 
 .woocommerce h2 {
   text-align: center;
   padding-bottom: 35px; }
+  @media (min-width: 0px) and (max-width: 767.98px) {
+    .woocommerce h2 {
+      font-size: 2.4rem; } }
 
 .soap-icon-box img {
   max-width: 65px; }
@@ -12248,8 +12258,8 @@ div.sticky-icon-header {
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
-  top: 0px;
-  z-index: 699; }
+  top: 40px;
+  z-index: 799; }
 
 .head-ico-mobile {
   color: white;
@@ -12266,7 +12276,7 @@ div.sticky-icon-header {
   padding: .5rem 0.2rem; }
 
 @media (min-width: 0px) and (max-width: 767.98px) {
-  .navbar-brand {
+  .nav-logo-custom {
     display: none; } }
 
 .woocommerce img.navbar-brand-mobile {
@@ -12450,23 +12460,23 @@ li.cat-item.cat-parent {
 .top-search-field-wrapper {
   width: 600px; }
 
-.top-search-field-wrapper[type=stext]::-webkit-input-placeholder {
+.top-search-field-wrapper[type=text]::-webkit-input-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=stext]::-moz-placeholder {
+.top-search-field-wrapper[type=text]::-moz-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=stext]:-ms-input-placeholder {
+.top-search-field-wrapper[type=text]:-ms-input-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=stext]::-ms-input-placeholder {
+.top-search-field-wrapper[type=text]::-ms-input-placeholder {
   color: white;
   text-align: center; }
 
-.top-search-field-wrapper[type=stext]::placeholder {
+.top-search-field-wrapper[type=text]::placeholder {
   color: white;
   text-align: center; }
 
@@ -12626,6 +12636,51 @@ div.wpcf7 {
 .woocommerce-page #content table.cart td.actions .input-text,
 .woocommerce-page table.cart td.actions .input-text {
   width: 200px !important; }
+
+.woocommerce ul.products, .woocommerce-page ul.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.woocommerce ul.products li.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.woocommerce ul.products li.product .woocommerce-loop-product__link {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.woocommerce ul.products li.product .button {
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+
+.wp-core-ui .button-primary {
+  background: #574676;
+  border-color: #574676;
+  -webkit-box-shadow: 0 1px 0 #574676;
+          box-shadow: 0 1px 0 #574676;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #574676, 1px 0 1px #574676, 0 1px 1px #574676, -1px 0 1px #574676; }
+
+.title-prev-deco {
+  width: 300px;
+  display: block;
+  margin: auto; }
+
+.about-cit {
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 25px 0; }
 
 /*
 * Use existing Bootstrap 4 classes and

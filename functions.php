@@ -300,8 +300,8 @@ function remove_core_updates(){
     global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
 }
 add_filter('pre_site_transient_update_core','remove_core_updates');
-add_filter('pre_site_transient_update_plugins','remove_core_updates');
-add_filter('pre_site_transient_update_themes','remove_core_updates');
+// add_filter('pre_site_transient_update_plugins','remove_core_updates');
+// add_filter('pre_site_transient_update_themes','remove_core_updates');
 
 // override country-select.js [checkout button]
 
@@ -311,3 +311,36 @@ function override_wc_country_select() {
 	wp_enqueue_script('wc-country-select', get_template_directory_uri() . '/woocommerce/js/country-select.js', array('jquery'), null, true);
 }
 
+//custom login login merchant
+function my_login_logo_one() { 
+    ?> 
+    <style type="text/css"> 
+     #login h1 a, .login h1 a {
+    background-image: url(/wp-content/themes/understrap-child/logos/aylm.png);
+    height:147px !important;
+	width:200px;
+	background-size: 200px 147px;
+	background-repeat: no-repeat;
+    padding-bottom: 10px;
+    } 
+    </style>
+     <?php 
+    } add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+
+    add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+
+    $html = str_replace( 'custom-logo', 'nav-logo-custom', $html );
+    $html = str_replace( 'custom-logo-link', 'nav-logo-custom', $html );
+
+    return $html;
+}
+
+// Cambia testo badge
+add_filter('woocommerce_sale_flash', 'woocommerce_custom_sale_text', 10, 3);
+function woocommerce_custom_sale_text($text, $post, $_product)
+{
+    return '<span class="onsale">EXCLUSIVE</span>';
+}

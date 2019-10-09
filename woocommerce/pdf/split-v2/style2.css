@@ -1,0 +1,175 @@
+/* Main Body */
+@page {
+	margin-top: 1.5cm;
+	margin-bottom: 1.5cm;
+	margin-left: 1.5cm;
+	margin-right: 1.5cm;
+}
+body {
+	background: #fff;
+	color: #000;
+	margin: 0cm;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 9pt;
+	line-height:1.2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-size: 12pt;
+	font-weight: normal;
+	margin: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li,
+ul {
+	margin-bottom: 0.75em;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p + p {
+	margin-top: 1.25em;
+}
+
+a { 
+/*	border-bottom: 1px solid; */
+	color:#000;
+	text-decoration: none; 
+}
+
+/* Basic Table Styling */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	page-break-inside: always;
+}
+
+th, td {
+	vertical-align: top;
+	text-align:left;
+	padding:0;
+}
+
+.left, th.left, td.left{text-align:left}
+.center, th.center, td.center{text-align:center}
+.right, th.right, td.right{text-align:right}
+
+td.header{padding-bottom:8mm}
+
+.thumbnail img{width:10mm; height:auto}
+.invoice-num {font-size:11pt; line-height:14pt}
+.invoice-data {font-size:9pt; line-height:14pt}
+.invoice-num span, .invoice-data span {font-weight:700}
+.shop-name {font-size:12pt; margin-bottom:2mm}
+h3 {font-size:8pt; text-transform:uppercase; color:#666}
+.notes-shipping {padding-top:5mm}
+
+tr.no-borders, td.no-borders {
+	border: 0 !important;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	padding: 0 !important;
+	width: auto;
+}
+
+/* Order details */
+
+table.order-details {
+	margin-top: 5mm;
+	margin-bottom: 5mm;
+}
+
+.order-details tr {
+	page-break-inside: always;
+	page-break-after: auto;	
+}
+
+.order-details td,
+.order-details th {
+	border-bottom: 0.1mm solid grey;
+	padding: 1mm ;
+}
+
+.order-details th {
+	font-weight: 400;
+	font-size: 9pt;
+}
+small{
+	font-size: 8pt;
+}
+
+.order-details thead th {
+	color: white;
+	background-color: #52C7E4;
+	border-color: #52C7E4;
+}
+
+dl {
+	margin: 0;
+}
+
+dt, dd, dd p {
+	display: inline;
+	font-size: 8pt;
+	margin: 0;
+}
+
+dd {
+	margin-left: 5px;
+}
+
+ul.wc-item-meta, ul.wc-item-meta li{margin:0; font-size:8pt}
+ul.wc-item-meta li p{display:inline}
+strong.wc-item-meta-label{font-weight:normal}
+
+/*
+dd:after {
+	content: "\A";
+	white-space: pre;
+}
+*/
+/* Totals */
+table.totals {
+	width: 100%;
+	margin-top: 5mm;
+}
+
+table.totals th, table.totals td {
+	border: 0;
+	border-top: 0.25pt solid #ccc;
+	border-bottom: 0.25pt solid #ccc;
+}
+
+table.totals tr:first-child td, table.totals tr:first-child th {
+	border-top: 0 none;
+}
+
+table.totals tr:last-child td, table.totals tr:last-child th {
+	border-top: 0.5pt solid #000;
+	border-bottom: 0.5pt solid #000;
+	font-weight: bold;
+}
+
+table.totals tr.totale td, table.totals tr.totale th {
+	border-top: 0.5pt solid #000;
+	border-bottom: 0.5pt solid #000;
+	font-weight: bold;
+}
+
+.address {width:58mm; padding-top:5mm; padding:0 2mm 0 0}
+/* Footer Imprint */
+#footer {
+}
