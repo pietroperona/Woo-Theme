@@ -128,7 +128,7 @@ add_filter('ngettext', 'change_rp_text', 10, 3);
 function change_rp_text($translated, $text, $domain)
 {
      if ($text === 'Related products' && $domain === 'woocommerce') {
-         $translated = esc_html__('Selezionati per te', $domain);
+         $translated = esc_html__('Selected for you', $domain);
      }
      return $translated;
 }
@@ -305,11 +305,11 @@ add_filter('pre_site_transient_update_core','remove_core_updates');
 
 // override country-select.js [checkout button]
 
-add_action('wp_enqueue_scripts', 'override_wc_country_select');
-function override_wc_country_select() {
-	wp_deregister_script('wc-country-select');
-	wp_enqueue_script('wc-country-select', get_template_directory_uri() . '/woocommerce/js/country-select.js', array('jquery'), null, true);
-}
+// add_action('wp_enqueue_scripts', 'override_wc_country_select');
+// function override_wc_country_select() {
+// 	wp_deregister_script('wc-country-select');
+// 	wp_enqueue_script('wc-country-select', get_template_directory_uri() . '/woocommerce/js/country-select.js', array('jquery'), null, true);
+// }
 
 //custom login login merchant
 function my_login_logo_one() { 

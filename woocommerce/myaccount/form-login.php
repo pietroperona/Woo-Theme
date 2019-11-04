@@ -50,9 +50,12 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 					<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'understrap' ); ?></span>
 				</label>
 				<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-				<button type="submit" class="btn btn-outline-primary" name="login" value="<?php esc_attr_e( 'Log in', 'understrap' ); ?>"><?php esc_html_e( 'Log in', 'understrap' ); ?></button>
-
 			</p>
+			<p>
+			<button type="submit" class="btn btn-outline-primary" name="login" value="<?php esc_attr_e( 'Log in', 'understrap' ); ?>"><?php esc_html_e( 'Log in', 'understrap' ); ?></button>
+			</p>
+
+			
 			<p class="woocommerce-LostPassword lost_password">
 				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'understrap' ); ?></a>
 			</p>
@@ -68,7 +71,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 	<div class="u-column2 col-md-6">
 
-		<h2><?php esc_html_e( 'Register', 'understrap' ); ?></h2>
+		<h2><?php esc_html_e( 'Are you a new client?', 'understrap' ); ?></h2>
 
 		<form method="post" class="woocommerce-form woocommerce-form-register register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
 

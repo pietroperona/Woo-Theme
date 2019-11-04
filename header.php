@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="container-fluid top-header-container">
 	<div class="row">
 		<!-- Collapse mobile button -->
-		<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+		<button class="navbar-toggler first-button d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<div class="animated-icon1"><span></span><span></span><span></span></div>
 		</button>
 		<!-- End of mobile Collapse button -->
@@ -118,8 +118,8 @@ the_custom_logo();
 				); ?>
 				
 				<div class="header-ico-group d-none d-md-block ">
-					<a href="/carrello" class="head-ico"><i class="fas fa-shopping-cart"></i></a>
-					<a href="/my-account" class="head-ico"><i class="fas fa-user-circle"></i></a>
+					<a href="<?php echo get_permalink( get_option('woocommerce_cart_page_id') ); ?>" class="head-ico"><i class="fas fa-shopping-cart"></i></a>
+					<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="head-ico"><i class="fas fa-user-circle"></i></a>
 					<a href="/wishlist" class="head-ico"><i class="far fa-heart"></i></a>
 					<a class="search-ico head-ico" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper">
 					<i class="fa fa-search"></i>
@@ -137,8 +137,8 @@ the_custom_logo();
 
 	<!-- mobile sticky icon e-commerce -->
 	<div class="header-ico-group-mobile scrollmenu-block scrollmenu-fixed text-center sticky-icon-header d-sm-none">
-		<a href="/carrello" class="head-ico-mobile"><i class="fas fa-shopping-cart"></i></a>
-		<a href="/my-account" class="head-ico-mobile"><i class="fas fa-user-circle"></i></a>
+		<a href="<?php echo get_permalink( get_option('woocommerce_cart_page_id') ); ?>" class="head-ico-mobile"><i class="fas fa-shopping-cart"></i></a>
+		<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="head-ico-mobile"><i class="fas fa-user-circle"></i></a>
 		<a href="/wishlist" class="head-ico-mobile"><i class="far fa-heart"></i></a>
 		<a class="search-ico head-ico-mobile" data-toggle="collapse" href="#top-search-wrapper" aria-expanded="false" aria-controls="top-search-wrapper"><i class="fa fa-search"></i></a>
 		<!-- <?php do_action('wpml_add_language_selector'); ?> -->
